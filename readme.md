@@ -27,11 +27,11 @@ logger.Infof("Info message %s", "formatted")
 package main
 
 import (
-    "path/to/your/logger"
+    "github.com/bruxaodev/go-logger"
 )
 
 func main() {
-    logger := new("main", Green)
+    logger := new("main", logger.Green)
     logger.Debug("Debug message")
     logger.Debugf("Debug message %s", "formatted")
     logger.Info("Info message")
